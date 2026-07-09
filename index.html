@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>CSKH EVN</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSKH EVN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
 
-<div class="card">
-
-    <img
-    src="https://play-lh.googleusercontent.com/evGmYOBR-G6zzS9dHu4PfgXLPBndHo-7oyvP1pPjET1PFCz07YxpSiwvqqm-4OSs64YG9iTm8VjawtzEFLj8i20=w240-h480-rw"
-    class="logo"
-    alt="CSKH EVN"
-    onerror="this.src='images/logo.png';">
-
-    <h1>CSKH EVN</h1>
-
-    <p class="subtitle">
-        Ứng dụng Chăm sóc khách hàng
-    </p>
-
-    <div class="loader"></div>
-
-    <div id="status">
-        Đang nhận diện thiết bị...
-    </div>
-
-    <div id="manual">
-
-        <div class="box">
-
-            <h2>Android</h2>
-
-            <div id="qrAndroid"></div>
-
-            <a id="androidBtn" class="btn android">
-                Tải trên Google Play
-            </a>
-
+<div class="container">
+    <div class="card">
+        <!-- Logo & Header -->
+        <div class="header-section">
+            <img 
+                src="https://play-lh.googleusercontent.com/evGmYOBR-G6zzS9dHu4PfgXLPBndHo-7oyvP1pPjET1PFCz07YxpSiwvqqm-4OSs64YG9iTm8VjawtzEFLj8i20=w240-h480-rw" 
+                class="logo" 
+                alt="CSKH EVN"
+                onerror="this.src='images/logo.png';"
+            >
+            <h1>CSKH EVN</h1>
+            <p class="subtitle">Ứng dụng Chăm sóc khách hàng</p>
         </div>
 
-        <div class="box">
-
-            <h2>iPhone</h2>
-
-            <div id="qrIOS"></div>
-
-            <a id="iosBtn" class="btn ios">
-                Tải trên App Store
-            </a>
-
+        <!-- Trạng thái -->
+        <div class="status-section">
+            <div class="loader"></div>
+            <div id="status">Đang nhận diện thiết bị...</div>
         </div>
 
-    </div>
+        <!-- Khu vực tải App -->
+        <div id="manual">
+            <!-- Box Android -->
+            <div class="box">
+                <h2>Android</h2>
+                <div class="qr-wrapper">
+                    <div id="qrAndroid"></div>
+                </div>
+                <a id="androidBtn" class="btn android" href="#">
+                    Tải trên Google Play
+                </a>
+            </div>
 
+            <!-- Box iOS -->
+            <div class="box">
+                <h2>iPhone (iOS)</h2>
+                <div class="qr-wrapper">
+                    <div id="qrIOS"></div>
+                </div>
+                <a id="iosBtn" class="btn ios" href="#">
+                    Tải trên App Store
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
