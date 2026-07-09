@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSKH EVN</title>
+
+<script>
+window.onload = function () {
+
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Android
+    if (/android/i.test(ua)) {
+        window.location.href =
+        "https://play.google.com/store/apps/details?id=com.evn.cskh.vn";
+        return;
+    }
+
+    // iPhone
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.location.href =
+        "https://apps.apple.com/vn/app/evn-cskh/id6754793134";
+        return;
+    }
+
+};
+</script>
+
+</head>
+
+<body>
+
+<h2>CSKH EVN</h2>
+
+<p>Nếu thiết bị không tự chuyển hướng, vui lòng chọn:</p>
+
+<a href="https://play.google.com/store/apps/details?id=com.evn.cskh.vn">
+Android
+</a>
+
+<br><br>
+
+<a href="https://apps.apple.com/vn/app/evn-cskh/id6754793134">
+iPhone
+</a>
+
+</body>
+</html>
