@@ -137,3 +137,19 @@ background:#2ca84a;
 background:#0c5ca8;
 
 }
+#qrAndroid img,
+#qrAndroid canvas,
+#qrIOS img,
+#qrIOS canvas{
+
+    display:block;
+    margin:auto;
+
+    padding:8px;
+    background:#fff;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+}
