@@ -28,11 +28,11 @@ text-align:center;
 }
 
 .logo{
-
-width:95px;
-
-margin-bottom:10px;
-
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border-radius:22px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 h1{
