@@ -90,24 +90,35 @@ color:#0c5ca8;
 #manual{
 
     display:none;
-
     margin-top:30px;
-
-    display:flex;
     gap:20px;
     justify-content:center;
     flex-wrap:wrap;
 
 }
-
 .box{
 
-    flex:1;
-    min-width:260px;
+    flex:1 1 260px;
+
     max-width:300px;
 
-}
+    background:#fff;
 
+    border:1px solid #ddd;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
 .btn{
 
 display:block;
